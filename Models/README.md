@@ -1,1 +1,1 @@
-This folder contains `.glb` file of all the models
+This folder contains individual folders of all the models.
