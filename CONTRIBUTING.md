@@ -1,5 +1,5 @@
 # Contribute
-## Thanks for deciding to contribute to our initiative, we welcome 3D artists to contribute AR models for **Limknow**. Follow these steps to contribute your model:
+Thanks for deciding to contribute to our initiative, we welcome 3D artists to contribute AR models for **Limknow**. Follow these steps to contribute your model:
 ### 1. Choosing a model you want to work on
   * Go to [AR Models list](ar-models-list), where you can find details of model along with a reference picture.
   * Once you have chosen a model to work on create an issue with model name(if it doesn't already exists), in the issue body write details of the model and mention that you would like to work on it.
