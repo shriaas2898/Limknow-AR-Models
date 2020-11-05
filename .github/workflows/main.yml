@@ -1,0 +1,40 @@
+name: add-model
+
+# This workflow gets executed when a pull request is merged for adding a new model.
+on:
+  pull_request:
+      types: [closed]
+      branches:
+        - main
+
+jobs:
+  add_model_job:
+    if: github.event.pull_request.merged == true
+    name: add-model
+    runs-on: ubuntu-latest
+    steps:
+      - name: setup directory
+        uses: actions/checkout@v2
+
+      - name: setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+          architecture: 'x64'
+
+      - name: install dependencies
+        run: pip3 install PyGithub  
+
+      - name: A job to add a model
+        id: addModel
+        run: | 
+          echo ::set-output name=pr_comment::`python3 contributor_script.py ${{ github.event.pull_request.number }}`
+          git config user.name shriaas2898
+          git add .
+          git commit -m "Added: ${{ github.event.pull_request.title }} on the leaderboard"
+          git push
+      - name: add comment
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: ${{ steps.addModel.outputs.pr_comment }}
