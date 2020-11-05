@@ -61,7 +61,6 @@ if __name__ == "__main__":
     # try:
         
         pr_id = sys.argv[1].strip()
-        print("id  = ",pr_id)
         g = Github()
         repo = g.get_repo("shriaas2898/Limknow-AR-Models")
         pr = repo.get_pull(int(pr_id))
