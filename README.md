@@ -12,4 +12,5 @@ You can request a model which you would like to see in **LimKnow** using [this t
 
 | Name | Number of Contributions | Link of Contribution|
 | --- | --- | --- |
+| [@shriaas2898](https://github.io/shriaas2898) | 1 | <details> <summary>List of Contributions </summary> - [Fixed #6: Added burmese python model](https://github.com/shriaas2898/Limknow-AR-Models/pull/7) <br></details> |
 <!-- End of Leaderbaord-->
