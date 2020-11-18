@@ -22,7 +22,8 @@ Thanks for deciding to contribute to our initiative, we welcome 3D artists to co
     * Now go back to folder for your model and upload files which you prepared in [Step 3]()
 ### 5. Adding your model to main repository.
   * Once you are done with all the above step go back to your forked repository, here you should see a message saying *your fork is `n` commits ahead...*, click on *create a pull request*
-  * In the title mention issue number which you have worked on e.g `Fixed #23: Added 3D model for <Model-Name>`
+  * In the title mention issue number which you have worked on e.g `Fixed #23: Added 3D model for <Model-Namte>`
+    **Note:** Do not include special characters other than `#`, `-` and `_` in the PR title.
   * In the issue body write the details about your model and any other point you want the reviewer to know.
   * Once your are done submit the Pull Request.
 ### 6. Updating Pull request.
